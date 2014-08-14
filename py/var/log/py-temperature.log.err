@@ -1,0 +1,701 @@
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/button.py", line 207, in run
+    self.menuCalendar(0)
+  File "/media/data/pytemperature/py/button.py", line 110, in menuCalendar
+    self.view_manual()
+  File "/media/data/pytemperature/py/button.py", line 70, in view_manual
+    z=self.db.view_manual()
+  File "/media/data/pytemperature/py/lib/database.py", line 72, in view_manual
+    self.db.query("select * from manual where id = 1")
+OperationalError: (2006, 'MySQL server has gone away')
+
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/lib/storage.py", line 95, in run
+    self.listadhtum.append(float(self.umidht))
+AttributeError: 'MyStorage' object has no attribute 'umidht'
+
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/button.py", line 207, in run
+    self.menuCalendar(0)
+  File "/media/data/pytemperature/py/button.py", line 110, in menuCalendar
+    self.view_manual()
+  File "/media/data/pytemperature/py/button.py", line 70, in view_manual
+    z=self.db.view_manual()
+  File "/media/data/pytemperature/py/lib/database.py", line 72, in view_manual
+    self.db.query("select * from manual where id = 1")
+OperationalError: (2006, 'MySQL server has gone away')
+
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/lib/bt.py", line 78, in run
+    self.db_man()
+  File "/media/data/pytemperature/py/lib/bt.py", line 33, in db_man
+    self.db.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/button.py", line 155, in run
+    self.plcd.pagina(self.pos,True)
+  File "/media/data/pytemperature/py/lib/paglcd.py", line 57, in pagina
+    self.view_manual()
+  File "/media/data/pytemperature/py/lib/paglcd.py", line 49, in view_manual
+    self.db.riavvio_db()
+  File "/media/data/pytemperature/py/lib/database.py", line 62, in riavvio_db
+    self.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/button.py", line 158, in run
+    self.tempUP()
+  File "/media/data/pytemperature/py/button.py", line 90, in tempUP
+    self.view_manual()
+  File "/media/data/pytemperature/py/button.py", line 70, in view_manual
+    z=self.db.view_manual()
+  File "/media/data/pytemperature/py/lib/database.py", line 72, in view_manual
+    self.db.query("select * from manual where id = 1")
+OperationalError: (2006, 'MySQL server has gone away')
+
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/lib/bt.py", line 78, in run
+    self.db_man()
+  File "/media/data/pytemperature/py/lib/bt.py", line 33, in db_man
+    self.db.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/button.py", line 158, in run
+    self.tempUP()
+  File "/media/data/pytemperature/py/button.py", line 90, in tempUP
+    self.view_manual()
+  File "/media/data/pytemperature/py/button.py", line 70, in view_manual
+    z=self.db.view_manual()
+  File "/media/data/pytemperature/py/lib/database.py", line 72, in view_manual
+    self.db.query("select * from manual where id = 1")
+OperationalError: (2006, 'MySQL server has gone away')
+
+Can't connect: Host is down
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/lib/bt.py", line 78, in run
+    self.db_man()
+  File "/media/data/pytemperature/py/lib/bt.py", line 33, in db_man
+    self.db.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/button.py", line 155, in run
+    self.plcd.pagina(self.pos,True)
+  File "/media/data/pytemperature/py/lib/paglcd.py", line 57, in pagina
+    self.view_manual()
+  File "/media/data/pytemperature/py/lib/paglcd.py", line 49, in view_manual
+    self.db.riavvio_db()
+  File "/media/data/pytemperature/py/lib/database.py", line 62, in riavvio_db
+    self.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/button.py", line 155, in run
+    self.plcd.pagina(self.pos,True)
+  File "/media/data/pytemperature/py/lib/paglcd.py", line 57, in pagina
+    self.view_manual()
+  File "/media/data/pytemperature/py/lib/paglcd.py", line 49, in view_manual
+    self.db.riavvio_db()
+  File "/media/data/pytemperature/py/lib/database.py", line 62, in riavvio_db
+    self.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/lib/bt.py", line 78, in run
+    self.db_man()
+  File "/media/data/pytemperature/py/lib/bt.py", line 33, in db_man
+    self.db.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/lib/bt.py", line 78, in run
+    self.db_man()
+  File "/media/data/pytemperature/py/lib/bt.py", line 33, in db_man
+    self.db.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/button.py", line 155, in run
+    self.plcd.pagina(self.pos,True)
+  File "/media/data/pytemperature/py/lib/paglcd.py", line 57, in pagina
+    self.view_manual()
+  File "/media/data/pytemperature/py/lib/paglcd.py", line 49, in view_manual
+    self.db.riavvio_db()
+  File "/media/data/pytemperature/py/lib/database.py", line 62, in riavvio_db
+    self.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/button.py", line 158, in run
+    self.tempUP()
+  File "/media/data/pytemperature/py/button.py", line 90, in tempUP
+    self.view_manual()
+  File "/media/data/pytemperature/py/button.py", line 70, in view_manual
+    z=self.db.view_manual()
+  File "/media/data/pytemperature/py/lib/database.py", line 72, in view_manual
+    self.db.query("select * from manual where id = 1")
+OperationalError: (2006, 'MySQL server has gone away')
+
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/button.py", line 158, in run
+    self.tempUP()
+  File "/media/data/pytemperature/py/button.py", line 90, in tempUP
+    self.view_manual()
+  File "/media/data/pytemperature/py/button.py", line 70, in view_manual
+    z=self.db.view_manual()
+  File "/media/data/pytemperature/py/lib/database.py", line 72, in view_manual
+    self.db.query("select * from manual where id = 1")
+OperationalError: (2006, 'MySQL server has gone away')
+
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Host is down
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Can't connect: Operation now in progress
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/button.py", line 158, in run
+    self.tempUP()
+  File "/media/data/pytemperature/py/button.py", line 90, in tempUP
+    self.view_manual()
+  File "/media/data/pytemperature/py/button.py", line 70, in view_manual
+    z=self.db.view_manual()
+  File "/media/data/pytemperature/py/lib/database.py", line 72, in view_manual
+    self.db.query("select * from manual where id = 1")
+OperationalError: (2006, 'MySQL server has gone away')
+
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/lib/bt.py", line 78, in run
+    self.db_man()
+  File "/media/data/pytemperature/py/lib/bt.py", line 33, in db_man
+    self.db.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    seException in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/lib/bt.py", line 78, in run
+    self.db_man()
+  File "/media/data/pytemperature/py/lib/bt.py", line 33, in db_man
+    self.db.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+ERROR 2006 (HY000) at line 1: MySQL server has gone away
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/button.py", line 267, in run
+    self.plcd.pagina(0,True)
+  File "/media/data/pytemperature/py/lib/paglcd.py", line 57, in pagina
+    self.view_manual()
+  File "/media/data/pytemperature/py/lib/paglcd.py", line 49, in view_manual
+    self.db.riavvio_db()
+  File "/media/data/pytemperature/py/lib/database.py", line 62, in riavvio_db
+    self.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/lib/storage.py", line 92, in run
+    self.dallas()
+  File "/media/data/pytemperature/py/lib/storage.py", line 41, in dallas
+    self.db.riavvio_db()
+  File "/media/data/pytemperature/py/lib/database.py", line 62, in riavvio_db
+    self.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/button.py", line 155, in run
+    self.plcd.pagina(self.pos,True)
+  File "/media/data/pytemperature/py/lib/paglcd.py", line 57, in pagina
+    self.view_manual()
+  File "/media/data/pytemperature/py/lib/paglcd.py", line 49, in view_manual
+    self.db.riavvio_db()
+  File "/media/data/pytemperature/py/lib/database.py", line 62, in riavvio_db
+    self.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/lib/bt.py", line 78, in run
+    self.db_man()
+  File "/media/data/pytemperature/py/lib/bt.py", line 33, in db_man
+    self.db.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/button.py", line 155, in run
+    self.plcd.pagina(self.pos,True)
+  File "/media/data/pytemperature/py/lib/paglcd.py", line 57, in pagina
+    self.view_manual()
+  File "/media/data/pytemperature/py/lib/paglcd.py", line 49, in view_manual
+    self.db.riavvio_db()
+  File "/media/data/pytemperature/py/lib/database.py", line 62, in riavvio_db
+    self.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/lib/bt.py", line 78, in run
+    self.db_man()
+  File "/media/data/pytemperature/py/lib/bt.py", line 33, in db_man
+    self.db.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/lib/bt.py", line 78, in run
+    self.db_man()
+  File "/media/data/pytemperature/py/lib/bt.py", line 33, in db_man
+    self.db.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/button.py", line 155, in run
+    self.plcd.pagina(self.pos,True)
+  File "/media/data/pytemperature/py/lib/paglcd.py", line 57, in pagina
+    self.view_manual()
+  File "/media/data/pytemperature/py/lib/paglcd.py", line 49, in view_manual
+    self.db.riavvio_db()
+  File "/media/data/pytemperature/py/lib/database.py", line 62, in riavvio_db
+    self.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception SystemExit in <module 'threading' from '/usr/lib/python2.6/threading.pyc'> ignored
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/lib/bt.py", line 78, in run
+    self.db_man()
+  File "/media/data/pytemperature/py/lib/bt.py", line 33, in db_man
+    self.db.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/lib/storage.py", line 92, in run
+    self.dallas()
+  File "/media/data/pytemperature/py/lib/storage.py", line 41, in dallas
+    self.db.riavvio_db()
+  File "/media/data/pytemperature/py/lib/database.py", line 62, in riavvio_db
+    self.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/lib/bt.py", line 78, in run
+    self.db_man()
+  File "/media/data/pytemperature/py/lib/bt.py", line 33, in db_man
+    self.db.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/media/data/pytemperature/py/button.py", line 155, in run
+    self.plcd.pagina(self.pos,True)
+  File "/media/data/pytemperature/py/lib/paglcd.py", line 57, in pagina
+    self.view_manual()
+  File "/media/data/pytemperature/py/lib/paglcd.py", line 49, in view_manual
+    self.db.riavvio_db()
+  File "/media/data/pytemperature/py/lib/database.py", line 62, in riavvio_db
+    self.database_conn()
+  File "/media/data/pytemperature/py/lib/database.py", line 23, in database_conn
+    self.db=_mysql.connect(host="127.0.0.1",db="temp",user="root",passwd="root")
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
